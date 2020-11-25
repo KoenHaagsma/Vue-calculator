@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/vue@next" defer></script>
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <div class="result">
+        <p> {{ result }} </p>
+    </div>
+    <div class="toetsenWrapper">
+        <div class="gridcontainer">
+            <div v-on:click="key(1)" class="grid-item">1</div>
+            <div v-on:click="key(2)" class="grid-item">2</div>
+            <div v-on:click="key(3)" class="grid-item">3</div>
+            <div v-on:click="key(4)" class="grid-item">4</div>
+            <div v-on:click="key(5)" class="grid-item">5</div>
+            <div v-on:click="key(6)" class="grid-item">6</div>
+            <div v-on:click="key(7)" class="grid-item">7</div>
+            <div v-on:click="key(8)" class="grid-item">8</div>
+            <div v-on:click="key(9)" class="grid-item">9</div>
+            <div v-on:click="key('+')" class="grid-item">+</div>
+            <div v-on:click="key('-')" class="grid-item">-</div>
+            <div v-on:click="key('*')" class="grid-item">*</div>
+            <div v-on:click="key('/')" class="grid-item">/</div>
+            <div v-on:click="sum()" class="grid-item">=</div>
+            <div v-on:click="clear" class="grid-item">Clear</div>
+        </div>
+
+
+
+
+    </div>
+</body>
+
+</html>
